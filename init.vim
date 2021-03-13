@@ -12,6 +12,8 @@ Plug 'majutsushi/tagbar'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -34,10 +36,14 @@ let g:airline_theme='base16'
 set number
 
 " Setting for vim-colors-solarized
-let g:solarized_termcolors=256
 syntax enable
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+" Setting for vim-gitgutter
+highlight clear SignColumn
+set signcolumn=yes
 
 " Setting commands for coc.nvim
 " :CocInstall coc-json coc-tsserver
