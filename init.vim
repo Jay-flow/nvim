@@ -9,9 +9,17 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
+
+" Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+
+" Flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'iamcco/coc-flutter'
+
+" Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
@@ -29,11 +37,18 @@ nmap <F8> :TagbarToggle<CR>
 " Setting for typescript-vim
 let g:typescript_indent_disable = 1
 
+" Setting for vim-airline
+let g:airline#extensions#tabline#enabled = 1
+
 " Setting for vim-airline-themes
 let g:airline_theme='base16'
 
 " Setting for Vim
 set number
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Setting for vim-colors-solarized
 syntax enable
@@ -45,5 +60,9 @@ colorscheme solarized
 highlight clear SignColumn
 set signcolumn=yes
 
-" Setting commands for coc.nvim
+" Input below commands for coc.nvim
 " :CocInstall coc-json coc-tsserver
+
+" TODO
+" Please set shotcut for Flutter
+" Reference site: https://vimawesome.com/plugin/coc-flutter
