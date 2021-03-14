@@ -238,7 +238,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 """"""""""""""""""""""""""""""""" End of coc settings
 
 " Input below commands for coc.nvim
-" :CocInstall coc-json coc-tsserver
+" :CocInstall coc-json coc-tsserver coc-flutter
 
 " TODO
 " Please set shotcut for Flutter
