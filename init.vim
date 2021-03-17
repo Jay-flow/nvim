@@ -20,6 +20,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'neoclide/coc-eslint'
+Plug 'neoclide/coc-prettier'
 
 " Flutter
 Plug 'dart-lang/dart-vim-plugin'
@@ -67,6 +69,11 @@ colorscheme solarized
 
 " Setting for vim-gitgutter
 highlight clear SignColumn
+
+" Setting for coc-prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 """""""""""""""""""""""""""""""""" Setting for coc
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
@@ -238,7 +245,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 """"""""""""""""""""""""""""""""" End of coc settings
 
 " Input below commands for coc.nvim
-" :CocInstall coc-json coc-tsserver
+" :CocInstall coc-json coc-tsserver coc-eslint coc-prettier
 
 " TODO
 " Please set shotcut for Flutter
