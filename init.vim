@@ -50,6 +50,9 @@ let g:typescript_indent_disable = 1
 
 " Setting for vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let mapleader = "t"
+nnoremap <leader>p :bp<CR>
+nnoremap <leader>n :bn<CR>
 
 " Setting for vim-airline-themes
 let g:airline_theme='base16'
