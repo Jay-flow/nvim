@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'altercation/vim-colors-solarized'
+Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -64,11 +64,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Setting for vim-colors-solarized
 syntax enable
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+
+" Setting for dracula.nvim
+colorscheme dracula
 
 " Setting for vim-gitgutter
 highlight clear SignColumn
