@@ -11,6 +11,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " HTML
 Plug 'mattn/emmet-vim'
@@ -33,11 +35,25 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+" Setting for Vim
+set number
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+syntax enable
+
 " Setting for nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" Setting for telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Setting for tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -56,15 +72,6 @@ nnoremap <leader>n :bn<CR>
 
 " Setting for vim-airline-themes
 let g:airline_theme='base16'
-
-" Setting for Vim
-set number
-set smarttab
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
-syntax enable
 
 " Setting for dracula.nvim
 colorscheme dracula
