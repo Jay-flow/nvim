@@ -4,13 +4,19 @@
 
 ## Start Guide
 
-### 1. Git repo clone
+### 1. Install Neovim
+
+```bash
+sudo snap install --beta nvim --classic
+```
+
+### 2. Git repo clone
 
 ```bash
 git clone https://github.com/Jay-flow/nvim.git ~/.config/nvim
 ```
 
-### 2. Plug Install
+### 3. Plug Install
 
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
 
