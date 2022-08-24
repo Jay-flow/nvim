@@ -36,3 +36,13 @@ nvim ~/.config/nvim/init.vim
 ```bash
 :PlugInstall
 ```
+
+### 4. (Optional) Set Neovim to default
+
+1. nvim ~/.zshrc
+
+```bash
+alias vim="nvim"
+
+source ~/.zshrc
+```
