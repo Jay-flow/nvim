@@ -1,5 +1,5 @@
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/site/autoload/plug.vim')
 
 Plug 'scrooloose/nerdtree'
 Plug 'Mofiqul/dracula.nvim'
