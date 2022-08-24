@@ -39,10 +39,20 @@ nvim ~/.config/nvim/init.vim
 
 ### 4. (Optional) Set Neovim to default
 
-1. nvim ~/.zshrc
+1. Open the file
+
+```bash
+nvim ~/.zshrc
+```
+
+2. Add below the command
 
 ```bash
 alias vim="nvim"
+```
 
+3. Apply
+
+```bash
 source ~/.zshrc
 ```
